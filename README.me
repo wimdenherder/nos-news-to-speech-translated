@@ -1,0 +1,32 @@
+# NOS news reader (in any language)
+This script reads NOS news articles for you in any language!
+It creates an mp3 and plays it. Works from the terminal.
+
+# Installation: Enable Google API Credentials
+1. Go to console.cloud.google.com
+2. Create a new project
+3. Go to Api's overview
+4. Enable API's and services (direct link: https://console.cloud.google.com/apis/library)
+5. Search Cloud Text-to-Speech API (direct link:https://console.cloud.google.com/apis/library/texttospeech.googleapis.com)
+6. Enable
+7. Set the billing account
+  1. Get 300 dollar for free: https://cloud.google.com/free/
+  2. Or create a billing account (direct link: https://console.cloud.google.com/billing/linkedaccount)
+8. Do the same for Cloud Translation API (direct link: https://console.cloud.google.com/apis/library/translate.googleapis.com)
+9. Go to APIS & Service -> Credentials
+10. Create credentials
+11. OAuth Client ID
+12. Type: Web Application
+13. Create
+14. Download these credentials (JSON)
+15. Save this to a save folder
+16. Get path of this file  (tip: move the file into terminal to see the full path)
+17. replace the path in the files: jslib/text-to-speech.js and jslib/translate.js
+18. also replace project id in jslib/translate.js. You find the project id in the dashboard: https://console.cloud.google.com/home/dashboard
+
+# Installation: Script
+1. Open terminal
+2. Go to folder of this script
+3. npm install (or npm i)
+4. node index
+5. now the script executes!

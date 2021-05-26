@@ -1,0 +1,32 @@
+{
+  "name": "nos",
+  "version": "1.0.0",
+  "description": "Dit script maakt mp3's van NOS artikelen.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^3.2.1",
+    "@google-cloud/translate": "^6.2.1",
+    "cheerio": "^1.0.0-rc.9",
+    "japanese": "^1.2.0",
+    "request": "^2.88.2",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wimdenherder/scrape-nos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wimdenherder/scrape-nos/issues"
+  },
+  "homepage": "https://github.com/wimdenherder/scrape-nos#readme"
+}
