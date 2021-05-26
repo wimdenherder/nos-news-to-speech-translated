@@ -2,37 +2,41 @@
 This script reads NOS news articles for you in any language!
 It creates an mp3 and plays it. Works from the terminal.
 
+# Clone project
+1. Download this repo: click the green Code button on top right of this page.
+2. Unzip & open this folder in terminal (tip: move the folder into the terminal to find its direct path)
+3. npm install
+4. code .   (opens the project in visual code studio)
+
 # Installation: Enable Google API Credentials
-1. Go to http://console.cloud.google.com
-2. Create a new project
-3. Go to Api's overview
-4. Enable API's and services 
+1. Register here and get 300 dollar to spend: https://cloud.google.com/free/
+2. Go to http://console.cloud.google.com
+3. Create a new project (click 'click a project' on top -> new project)
+4. Go to Api's overview
+5. Enable API's and services 
 (direct link: https://console.cloud.google.com/apis/library)
-5. Search Cloud Text-to-Speech API 
+6. Search Cloud Text-to-Speech API 
 (direct link:https://console.cloud.google.com/apis/library/texttospeech.googleapis.com)
-6. Enable
-7. Set the billing account
-  1. Get 300 dollar for free: https://cloud.google.com/free/
-  2. Or create a billing account 
-  (direct link: https://console.cloud.google.com/billing/linkedaccount)
-8. Do the same for Cloud Translation API 
+7. Enable
+8. Set the billing account: get 300 dollar for free: https://cloud.google.com/free/
+9. Do the same for Cloud Translation API 
 (direct link: https://console.cloud.google.com/apis/library/translate.googleapis.com)
-9. Go to APIS & Service -> Credentials 
+10. Go to APIS & Service -> Credentials 
 (direct link: https://console.cloud.google.com/apis/credentials)
-10. Create credentials -> Service Account
-11. Give it a name, click Create
-12. Click on the new credentials at the bottom of the window
+11. Create credentials -> Service Account
+12. Give it a name, click Create, click Done
+13. Click on the new credentials at the bottom of the window
 This brings you to IAM & Admin -> Service accounts
-13. Click on Keys
-14. Click 'Add Key' -> create new key -> JSON -> Create
-15. Move the downloaded credentials (JSON) to your script's folder
-16. Get path of this file  (tip: move the file into terminal to see the full path)
-17. replace the path in the files: jslib/text-to-speech.js and jslib/translate.js
-18. also replace project id in jslib/translate.js. You find the project id in the dashboard: https://console.cloud.google.com/home/dashboard
+14. Click on Keys
+15. Click 'Add Key' -> create new key -> JSON -> Create
+16. Move the downloaded credentials (JSON) to your script's folder
+17. Copy name of this file  (something like: your-name-6255792a8a4f.json)
+18. replace the path in the files: jslib/text-to-speech.js and jslib/translate.js
+19. also replace project id in jslib/translate.js. You find the project id in the dashboard: https://console.cloud.google.com/home/dashboard
 
 # Installation: Script
 1. Open terminal
 2. Go to folder of this script
 3. npm install (or npm i)
-4. node index
-5. now the script executes!
+4. node index  (or npm run start)
+5. have fun!

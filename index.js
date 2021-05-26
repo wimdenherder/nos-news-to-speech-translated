@@ -26,6 +26,11 @@ async function cliApp() {
   var toLanguageCode = await readlineSync();
   const languageLib = {
     en: 'en-UK',
+    ja: 'ja-JP',
+    ru: 'ru-RU',
+    it: 'it-IT',
+    es: 'es-ES',
+    nl: 'nl-be'
   }
   toLanguageCode = (toLanguageCode.indexOf('-') === -1 ? languageLib[toLanguageCode] || toLanguageCode + "-" + toLanguageCode.toUpperCase() : toLanguageCode )|| "nl-NL";
   

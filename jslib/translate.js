@@ -1,6 +1,6 @@
 const {Translate} = require('@google-cloud/translate').v2;
-const projectId = 'project-id-4791922729342675509'; // <-- REPLACE THIS!
-process.env.GOOGLE_APPLICATION_CREDENTIALS = "/usr/local/bin/webconfig/project-id-4791922729342675509-04962bca7446.json"; // <-- REPLACE THIS!
+const projectId = 'nos-reader'; // <-- REPLACE THIS!
+process.env.GOOGLE_APPLICATION_CREDENTIALS = "nos-reader-6255792a8a4f.json"; // <-- REPLACE THIS!
 const translateApi = new Translate({projectId}); 
 
 async function translate(text, targetLang, fromLang) {
