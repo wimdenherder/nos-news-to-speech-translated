@@ -1,7 +1,7 @@
 const fs = require('fs');
 const util = require('util');
 const textToSpeechLib = require('@google-cloud/text-to-speech');
-process.env.GOOGLE_APPLICATION_CREDENTIALS = "nos-reader-6255792a8a4f.json"; // <-- REPLACE THIS!
+process.env.GOOGLE_APPLICATION_CREDENTIALS = "/Users/wimdenherder/Documents/Programmeren/Nodejs/credentials/ferrous-quest-315005-8944b095c723.json"; // <-- REPLACE THIS!
 
 async function textToSpeech(options) {
   const { 

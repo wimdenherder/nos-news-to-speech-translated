@@ -11,7 +11,6 @@ async function getArticles() {
     let link = 'https://www.nos.nl' + $(this).attr('href');
     let infoPerArticleHtml = $(this).html();
     let $$ = cheerio.load(infoPerArticleHtml);
-    console.log('getBody:'  + link + ' ' + getBody($$));
     let title = $$('.e48nto-2').text();
     let description = $$('.e48nto-3').text();
     links.push( {link, title, description} );

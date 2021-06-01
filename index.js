@@ -1,3 +1,4 @@
+// @ts-nocheck
 const NOS = require('./jslib/nos.js');
 const CLI = require('./jslib/cli.js');
 const { textToSpeech } = require('./jslib/text-to-speech.js');
